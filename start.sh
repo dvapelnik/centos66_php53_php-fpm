@@ -26,6 +26,7 @@ sed -i "s/post_max_size = 8M/post_max_size = ${PHP_INI_POST_MAX_SIZE}/" ${PHP_IN
 sed -i "s/max_input_time = 60/max_input_time = ${PHP_INI_MAX_INPUT_TIME}/" ${PHP_INI_FILE}
 sed -i "s/max_execution_time = 30/max_execution_time = ${PHP_INI_MAX_EXECUTION_TIME}/" ${PHP_INI_FILE}
 sed -i "s/;date.timezone =/date.timezone = ${PHP_INI_DATE_TIMEZONE//\//\/}/" ${PHP_INI_FILE}
+sed -i "s/^upload_max_filesize = 2M$/upload_max_filesize = ${PHP_INI_UPLOAD_MAX_FILESIZE}/" ${PHP_INI_FILE}
 
 # Start php-fpm
 /usr/sbin/php-fpm -y ${PHP_FPM_CONFIG_FILE} -c ${PHP_INI_FILE} -F 
