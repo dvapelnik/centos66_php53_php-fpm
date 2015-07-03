@@ -5,4 +5,4 @@ Just look at docker-compose.yml
 
 You must use the volumes (volumes in docker-compose.yml or -v on native docker run at command line) if you want to use a unix socket for php-fpm. In another case, you must use the port - may be with port forwarding (just test it)
 
-You can find all environment variables in docker-compose.yml or Dockerfile (it as defaults here)
+You can find all environment variables in docker-compose.yml or Dockerfile (its as defaults here)
