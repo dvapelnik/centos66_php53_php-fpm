@@ -2,7 +2,7 @@ FROM centos:6.6
 
 MAINTAINER Dmitry Vapelnik <dvapelnik@gmail.com>
 
-RUN yum install php-fpm php-mysql php-mbstring -y -q 2> /dev/null
+RUN yum install php-fpm php-mysql php-mbstring php-gd -y -q 2> /dev/null
 
 ENV PHP_FPM_USE_SOCKET 0
 ENV PHP_FPM_PORT 9000
